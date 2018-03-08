@@ -2486,11 +2486,11 @@ section.dark h2 {
 
 .soc-list li a:active,
 .soc-list li a.active {
-    top: 5px;
+    top: 8px;
 }
 
 .soc-list li a:hover {
-    top: 5px;
+    top: 8px;
 }
 
 .soc-list li a img {
