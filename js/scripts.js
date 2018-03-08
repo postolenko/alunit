@@ -109,6 +109,40 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".count_goods .count-btn").click(function(e) {
+
+            e.preventDefault();
+
+            parentBlock= $(this).closest(".count_goods");
+
+            var countInput = parentBlock.find(".count");
+
+            var countVal = countInput.val();
+
+            if(countVal == "") {
+
+                countVal = 1;
+
+            }
+
+            if( $(this).hasClass("minus-btn") && countVal > 1 ) {
+
+                countVal--;
+
+            } else if( $(this).hasClass("plus-btn")) {
+
+                countVal++;
+
+            }
+
+            countInput.val(countVal);
+
+        });
+
+    });
+
 });
 
 function getArticleBg() {
