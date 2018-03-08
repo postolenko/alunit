@@ -2513,12 +2513,12 @@ section.dark h2 {
 
 }
 
-.tabs-card_templ .col-1 {
+.tabs-card_templ > .col-1 {
     width: 39%;
     padding: 0 1.5% 0 3%;
 }
 
-.tabs-card_templ .col-2 {
+.tabs-card_templ > .col-2 {
     width: 61%;
     padding: 0 0 0 12px;
 }
@@ -2651,14 +2651,14 @@ section.dark h2 {
 .price-calc_wrapp .col-1 {
     display: table-cell;
     vertical-align: top;
-    width: 140px;
+    width: 173px;
     padding-top: 2px;
 }
 
 .price-calc_wrapp .col-2 {
     display: table-cell;
     vertical-align: top;
-    width: 174px;
+    width: 147px;
     padding-top: 3px;
     text-align: center;
 }
@@ -2676,6 +2676,41 @@ section.dark h2 {
 
 .price-calc_wrapp {
 
+}
+
+.price-input_wrapp {
+
+}
+
+.price-input_wrapp {
+    position: relative;
+    white-space: nowrap;
+}
+
+.price-input_wrapp p.price {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.price-input_wrapp .rub {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.price-input {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border: 1px solid transparent
+    outline: 1px solid red;
+    font-size: 36px;
+    line-height: 43px;
+    color: #333333;
 }
 
 p.price {

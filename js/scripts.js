@@ -111,15 +111,28 @@ $(document).ready(function() {
 
     $(function() {
 
+    var calcName;
+    var priceInput;
+    var priceVal;
+    var countInput;
+    var countVal ;
+    var priceTotal;
+
         $(".count_goods .count-btn").click(function(e) {
 
             e.preventDefault();
 
-            parentBlock= $(this).closest(".count_goods");
+            parentBlock = $(this).closest(".count_goods");
 
-            var countInput = parentBlock.find(".count");
+            calcName = parentBlock.attr("data-count-calc");
 
-            var countVal = countInput.val();
+            priceInput = $("[data-input-calc = '"+ calcName +"']");
+
+            priceVal = parseInt( priceInput.attr("data-price-val") );
+
+            countInput = parentBlock.find(".count");
+
+            countVal = countInput.val();
 
             if(countVal == "") {
 
@@ -138,6 +151,48 @@ $(document).ready(function() {
             }
 
             countInput.val(countVal);
+
+            priceTotal = priceVal * countVal;
+
+            priceInput.val(priceTotal);
+
+            $("[data-calc-price = '"+ calcName +"']").text(priceTotal);
+
+        });
+
+        $(document).keyup(function() {
+
+            if( $("[data-count-calc]").length > 0 ) {
+
+                $("[data-count-calc]").each(function() {
+
+                    calcName = $(this).attr("data-count-calc");
+
+                    priceInput = $("[data-input-calc = '"+ calcName +"']");
+
+                    priceVal = parseInt( priceInput.attr("data-price-val") );
+
+                    countInput = $(this).find(".count");
+
+                    countVal = countInput.val();
+
+                    if(countVal == "") {
+
+                        countVal = 1;
+
+                    }
+
+                    countInput.val(countVal);
+
+                    priceTotal = priceVal * countVal;
+
+                    priceInput.val(priceTotal);
+
+                    $("[data-calc-price = '"+ calcName +"']").text(priceTotal);
+
+                });
+
+            }
 
         });
 
