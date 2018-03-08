@@ -2486,9 +2486,51 @@ section.dark h2 {
 
 .soc-list li a:active,
 .soc-list li a.active {
-    top: 10px;
+    top: 5px;
 }
 
 .soc-list li a:hover {
-    top: 10px;
+    top: 5px;
+}
+
+.soc-list li a img {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.soc-list li a:link img ,
+.soc-list li a:visited img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.soc-list li a:active img,
+.soc-list li a.active img {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.soc-list li a:hover img {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    transform: scale(1.08);
 }
