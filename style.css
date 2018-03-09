@@ -2464,11 +2464,6 @@ section.dark h2 {
     margin: 12px 0 0 0;
 }
 
-.two-cols-templ > .col {
-    /*outline: 1px solid red;*/
-    /*height: 200px;*/
-}
-
 .two-cols-templ > .col-1 {
     width: 24%;
 }
@@ -2515,6 +2510,7 @@ section.dark h2 {
 
 .links-list li a {
     display: block;
+    padding-right: 10px;
     position: relative;
     font-size: 14px;
     line-height: 18px;

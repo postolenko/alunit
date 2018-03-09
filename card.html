@@ -12,15 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="vendors/js/select2.js"></script>
-	<script type="text/javascript" src="vendors/js/parallax.js"></script>
-	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </head>
 
 <body>
@@ -34,8 +30,17 @@
 		<div class="header-site row-1">
 			<div class="row clearfix">
 				<div class="col col-1 left">
+					<a href="#" class="resp-logo">
+						<img src="img/logo_resp.png" alt="" />
+					</a>
+					<button class="respmenubtn">	
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 					<div class="main-nav_wrapp">
-						<ul class="main-nav">
+						<div class="append-elem search-resp" data-append-elem="1"></div>
+						<ul class="main-nav scroll">
 							<li><a href="#">Главная</a></li>
 							<li><a href="#">Ингредиент</a></li>
 							<li><a href="#">Продукция</a></li>
@@ -43,20 +48,17 @@
 							<li><a href="#">Дилерам</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
-					</div>
-					<button class="respmenubtn">	
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
+					</div>					
 				</div>
 				<div class="col col-2 right offset-ziro">
 					<div class="inner-col-1">
-						<div class="search-box">
-							<form>
-								<input type="text" placeholder="Поиск" />
-								<button class="search-btn" type="submit"></button>
-							</form>
+						<div class="append-elem" data-append-desktop-elem="1" data-min-screen="480">
+							<div class="search-box">
+								<form>
+									<input type="text" placeholder="Поиск" />
+									<button class="search-btn" type="submit"></button>
+								</form>
+							</div>
 						</div>
 					</div>
 					<div class="inner-col-2">
@@ -130,8 +132,10 @@
 							<div class="col col-2 right">
 								<div class="tabs-card_templ clearfix">
 									<div class="col col-1 left">
-										<div class="product-img-box">
-											<img src="img/card_good.jpg" alt="" />
+										<div class="append-elem" data-append-desktop-elem="2" data-min-screen="1024">
+											<div class="product-img-box">
+												<img src="img/card_good.jpg" alt="" />
+											</div>
 										</div>
 									</div>
 									<div class="col col-2 right">
@@ -139,6 +143,7 @@
 											<h2>Дополнительные кристаллы</h2>
 											<p>d 54325</p>
 										</div>
+										<div class="append-elem card-photo" data-append-elem="2"></div>
 										<div class="tabs tabs-2">
 											<div class="tabs-links-block">
 												<div class="tabs-links offset-ziro">

@@ -179,6 +179,22 @@
 
 	/*-- /Section 8 - Home Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.tabs-card_templ > .col-1 {
+	    width: 32%;
+	}
+
+	.tabs-card_templ > .col-2 {
+	    width: 68%;
+	}
+
+	.thumbnails_5 .thumb_5 {
+	    width: 50%;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -343,6 +359,38 @@
 
 	/*-- /Section 6 - Home Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.two-cols-templ > .col-1 {
+	    width: 30%;
+	}
+
+	.two-cols-templ > .col-2 {
+	    width: 70%;
+	}
+
+	.tabs-card_templ > .col-1 {
+	    display: none;
+	}
+
+	.tabs-card_templ > .col-2 {
+	    width: 100%;
+	    padding: 0 0 0 35px;
+	}
+
+	.product-img-box {
+	    height: 370px;
+	    max-width: 390px;
+	    margin: 20px auto;
+	}
+
+	.tabs-2 .tab p {
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -415,6 +463,14 @@
 	}
 
 	/*-- /Section 8 - Home Page --*/
+
+	/*-- Section 1 - Shop Page --*/
+
+	.thumb_6 {
+	    width: 50%;
+	}
+
+	/*-- /Section 1 - Shop Page --*/
 
 }
 
@@ -522,6 +578,30 @@
 
 	/*-- /Section 8 - Home Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.two-cols-templ > .col {
+	    padding: 20px 0;
+	}
+
+	.two-cols-templ > .col-1 {
+	    width: 100%;
+	}
+
+	.two-cols-templ > .col-2 {
+	    width: 100%;
+	}
+
+	.links-box_wrapp {
+	    max-width: 320px;
+	}
+
+	.tabs-card_templ > .col-2 {
+	    padding: 0;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -624,6 +704,55 @@
 
 	/*-- /Section 8 - Home Page --*/
 
+	/*-- Section 1 - Card Page --*/
+
+	.price-calc_wrapp {
+	    display: block;
+		margin-top: 16px;
+		margin-bottom: 0px;
+	}
+
+	.price-calc_wrapp .col {
+		padding: 7px 0;
+	}
+
+	.price-calc_wrapp .col-1 {
+		display: block;
+		width: 100%;
+	}
+
+	.price-calc_wrapp .col-2 {
+		display: inline-block;
+		vertical-align: top;
+		width: 49%;
+		text-align: left;
+	}
+
+	.price-calc_wrapp .col-3 {
+		display: inline-block;
+		vertical-align: top;
+		width: 49%;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
+	/*-- Section 1 - Shop Page --*/
+
+	.thumbnails_6 {
+	    margin: 10px 0 35px 0;
+	}
+
+	.thumb_6 {
+		display: block;
+	    width: 100%;
+	    max-width: 340px;
+	    margin: 0 auto;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	/*-- /Section 1 - Shop Page --*/
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -710,6 +839,55 @@
 	}
 
 	/*-- /Section 8 - Home Page --*/
+
+	/*-- Section 1 - Card Page --*/
+
+	.tabs-2 .tabs-links-block {
+	    border-top: 1px solid #ededed;
+	}
+
+	.tabs-2 .tabs-links label {
+	    font-size: 18px;
+	    line-height: 29px;
+	    font-weight: bold;
+	}
+
+	.tabs-2 .tabs-links label.active {
+	    border-bottom: 1px solid #ededed;
+	}
+
+	.tabs-2 .tabs-links label:nth-child(1).active {
+	    border-top: 1px solid transparent;
+	}
+
+	.tabs-2 .tabs-links label:last-child.active {
+	    border-bottom: 1px solid transparent;
+	}
+
+	.tabs-2 .tab p {
+	    font-size: 15px;
+	    line-height: 21px;
+	}
+
+	/*-- /Section 1 - Card Page --*/
+
+	/*-- Section 1 - Card Page --*/
+
+	.price-calc_wrapp .col-2 {
+		width: 100%;
+	}
+
+	.price-calc_wrapp .col-3 {
+		width: 100%;
+		text-align: left;
+	}
+
+	.thumbnails_5 .thumb_5 {
+	    width: 100%;
+	    max-width: 100%;
+	}
+
+	/*-- /Section 1 - Card Page --*/
 	
 }
 
