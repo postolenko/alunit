@@ -13,16 +13,6 @@ var indexActiveTab;
 
 $(window).load(function() {
 
-    // $("select").each(function() {
-
-    //     var parentBlock = $(this).closest(".select-block");
-
-    //     parentBlock.find(".select2-container").css({
-    //         "width" : parentBlock.width() + "px"
-    //     });
-
-    // });
-
      getArticleBg();
 
 });
