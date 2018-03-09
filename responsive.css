@@ -195,6 +195,23 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Footer --*/
+
+	.h_wrapp h2 {
+	    font-size: 51px;
+	    line-height: 64px;
+	}
+
+	.contacts-thumbs {
+	    margin: 28px -10px 31px -10px;
+	}
+
+	.contact_thumb {
+	    padding: 17px 10px;
+	}
+
+	/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -390,6 +407,14 @@
 	}
 
 	/*-- /Section 1 - Card Page --*/
+
+	/*-- Footer --*/
+
+	.contact_thumb {
+		width: 50%;
+	}
+
+	/*-- /Footer --*/
 
 }
 
@@ -752,6 +777,35 @@
 	}
 
 	/*-- /Section 1 - Shop Page --*/
+
+	/*-- Footer --*/
+
+	.contacts-thumbs {
+	    margin: 28px 0 0 0;
+	}
+
+	.contact_thumb {
+		width: 100%;
+		padding: 15px 0;
+		text-align: center;
+	}
+
+	.contact_thumb .inner {
+	    display: inline-table;
+	    width: auto;
+	    margin: 2px 0;
+	}
+
+	.footer-soc_wrapp {
+		padding: 20px 0 34px 0;
+	}
+
+	.footer-soc_wrapp .soc-list {
+		margin: 0;
+		text-align: center;
+	}
+
+	/*-- /Footer --*/
 
 }
 

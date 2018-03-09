@@ -10,18 +10,12 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="vendors/js/select2.js"></script>
-	<script type="text/javascript" src="vendors/js/parallax.js"></script>
-	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </head>
 
@@ -31,13 +25,22 @@
 
 	<!-- Header -->
 		
-	<header>
+	<header class="header-site" id="header">
 
 		<div class="header-site row-1">
 			<div class="row clearfix">
 				<div class="col col-1 left">
+					<a href="#" class="resp-logo">
+						<img src="img/logo_resp.png" alt="" />
+					</a>
+					<button class="respmenubtn">	
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 					<div class="main-nav_wrapp">
-						<ul class="main-nav">
+						<div class="append-elem search-resp" data-append-elem="1"></div>
+						<ul class="main-nav scroll">
 							<li><a href="#">Главная</a></li>
 							<li><a href="#">Ингредиент</a></li>
 							<li><a href="#">Продукция</a></li>
@@ -45,20 +48,17 @@
 							<li><a href="#">Дилерам</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
-					</div>
-					<button class="respmenubtn">	
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
+					</div>					
 				</div>
 				<div class="col col-2 right offset-ziro">
 					<div class="inner-col-1">
-						<div class="search-box">
-							<form>
-								<input type="text" placeholder="Поиск" />
-								<button class="search-btn" type="submit"></button>
-							</form>
+						<div class="append-elem" data-append-desktop-elem="1" data-min-screen="480">
+							<div class="search-box">
+								<form>
+									<input type="text" placeholder="Поиск" />
+									<button class="search-btn" type="submit"></button>
+								</form>
+							</div>
 						</div>
 					</div>
 					<div class="inner-col-2">
@@ -124,23 +124,25 @@
 										<p>Сб-Вс с 9 до 18</p>
 									</div>
 								</div>
-								<ul class="soc-list">
-									<li>
-										<a href=""><img src="img/vk.png" alt="" /></a>
-									</li>
-									<li>
-										<a href=""><img src="img/facebook.png" alt="" /></a>
-									</li>
-									<li>
-										<a href=""><img src="img/instagram.png" alt="" /></a>
-									</li>
-									<li>
-										<a href=""><img src="img/od.png" alt="" /></a>
-									</li>
-									<li>
-										<a href=""><img src="img/youtube.png" alt="" /></a>
-									</li>
-								</ul>
+								<div class="append-elem" data-append-desktop-elem="4" data-min-screen="600">
+									<ul class="soc-list">
+										<li>
+											<a href=""><img src="img/vk.png" alt="" /></a>
+										</li>
+										<li>
+											<a href=""><img src="img/facebook.png" alt="" /></a>
+										</li>
+										<li>
+											<a href=""><img src="img/instagram.png" alt="" /></a>
+										</li>
+										<li>
+											<a href=""><img src="img/od.png" alt="" /></a>
+										</li>
+										<li>
+											<a href=""><img src="img/youtube.png" alt="" /></a>
+										</li>
+									</ul>
+								</div>
 							</div>
 							<div class="contact_thumb">
 								<div class="inner">
@@ -163,7 +165,7 @@
 											<li><a href="tel:+79035512625">+7 (903) 551-26-25</a></li>
 										</ul>
 									</div>
-								</div>
+								</div><br />
 								<div class="inner">
 									<div class="col-1">
 										<i class="envelop"></i>
@@ -175,6 +177,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="append-elem footer-soc_wrapp" data-append-elem="4"></div>
 				</div>
 			</div>
 
