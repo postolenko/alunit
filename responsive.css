@@ -614,6 +614,10 @@
 
 	/*-- Section 8 - Home Page --*/
 
+	#map {
+	    max-height: 480px;
+	}
+
 	.contacts-box .soc-list {
 	    text-align: center;
 	}
