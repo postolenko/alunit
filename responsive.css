@@ -202,11 +202,11 @@
 	    line-height: 64px;
 	}
 
-	.contacts-thumbs {
+	.footer_contacts_th {
 	    margin: 28px -10px 31px -10px;
 	}
 
-	.contact_thumb {
+	.footer_contacts_th .contact_thumb {
 	    padding: 17px 10px;
 	}
 
@@ -410,7 +410,7 @@
 
 	/*-- Footer --*/
 
-	.contact_thumb {
+	.footer_contacts_th .contact_thumb {
 		width: 50%;
 	}
 
@@ -472,7 +472,7 @@
 
 	.contacts-box {
 	    max-width: 100%;
-	    margin: 0 -10px;
+	    margin: 0;
 	}
 
 	.contacts-box .contact_thumb {
@@ -780,17 +780,17 @@
 
 	/*-- Footer --*/
 
-	.contacts-thumbs {
+	.footer_contacts_th {
 	    margin: 28px 0 0 0;
 	}
 
-	.contact_thumb {
+	.footer_contacts_th .contact_thumb {
 		width: 100%;
 		padding: 15px 0;
 		text-align: center;
 	}
 
-	.contact_thumb .inner {
+	.footer_contacts_th .contact_thumb .inner {
 	    display: inline-table;
 	    width: auto;
 	    margin: 2px 0;
