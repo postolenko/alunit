@@ -35,11 +35,15 @@ $(window).resize(function() {
 
     getPromoSliderPaddingTop();
 
+    getAdaptivePositionElements();
+
 });
 
 $(document).ready(function() {
 
     getPromoSliderPaddingTop();
+
+    getAdaptivePositionElements();
 
     // Tabs 
 
@@ -111,12 +115,12 @@ $(document).ready(function() {
 
     $(function() {
 
-    var calcName;
-    var priceInput;
-    var priceVal;
-    var countInput;
-    var countVal ;
-    var priceTotal;
+        var calcName;
+        var priceInput;
+        var priceVal;
+        var countInput;
+        var countVal ;
+        var priceTotal;
 
         $(".count_goods .count-btn").click(function(e) {
 
@@ -198,6 +202,41 @@ $(document).ready(function() {
 
     });
 
+    $(function() {
+
+        $(".respmenubtn").click(function() {
+
+            if( $(".main-nav_wrapp").is(":hidden") ) {
+
+                $(".main-nav_wrapp").fadeIn(300);
+
+                $(this).addClass("active");
+
+            } else {
+
+                $(".main-nav_wrapp").fadeOut(300);
+
+                $(this).removeClass("active");
+
+            }
+
+        });
+
+        $(this).keydown(function(eventObject){
+
+            if (eventObject.which == 27 &&
+                $(".main-nav_wrapp").is(":visible") ) {
+
+                    $(".main-nav_wrapp").fadeOut(300);
+
+                    $(".respmenubtn").removeClass("active");
+
+            }
+
+        });
+
+    });
+
 });
 
 function getArticleBg() {
@@ -232,18 +271,50 @@ function getArticleBg() {
 
 function getPromoSliderPaddingTop() {
 
-    if( $(".promo-slider").length > 0 ) {
+    if( $(".promo-slider").length > 0) {
 
-        $("#header").addClass("fixed");
+        if(bodyWidth >= 1024) {
 
-        $(".promo-slider").css({
+            $("#header").addClass("fixed");
 
-            "padding-top" : $("#header").height() + "px"
+            $(".promo-slider").css({
+                "padding-top" : $("#header").height() + "px"
+            });
 
-        })
+        } else {
+
+            $("#header").removeClass("fixed");
+
+            $(".promo-slider").css({
+                "padding-top" : 0
+            });
+
+        }
 
     }
 
-    
+}
+
+function getAdaptivePositionElements() {
+
+    $(".append-elem").each(function() {
+
+        screenParam = parseInt( $(this).attr("data-min-screen") );
+
+        indexElem = $(this).attr("data-append-desktop-elem");
+
+        if( bodyWidth <= screenParam ) {
+
+            $("[data-append-elem = '"+ indexElem +"']").append($(this).children());
+
+        }
+
+         if( bodyWidth > screenParam ) {
+
+            $("[data-append-desktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
+
+        }
+
+    });
 
 }

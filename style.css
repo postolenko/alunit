@@ -71,7 +71,6 @@ body {
 
 .wrapper {
     width: 100%;
-    min-width: 1182px;
     position: relative;
     min-height: 100vh;
     display: -webkit-box;
@@ -795,7 +794,28 @@ p.green {
     width: 42%;
     padding-top: 3px;
     padding-bottom: 3px;
-    text-align:  right;
+    text-align: right;
+    position: relative;
+    z-index: 12;
+}
+
+.resp-logo {
+    /*display: inline-block;*/
+    display: none;
+    vertical-align: top;
+    width: 28px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 15%;
+    position: relative;
+    z-index: 12;
+}
+
+.resp-logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 .main-nav_wrapp {
@@ -861,7 +881,7 @@ p.green {
     height: 37px;
     background: transparent;
     cursor: pointer;
-    z-index: 11;
+    z-index: 12;
     position: relative;
     top: 6px;
     border: 1px solid transparent;
@@ -871,7 +891,7 @@ p.green {
     display: block;
     width: 27px;
     height: 2px;
-    background: #ffffff;
+    background: #333333;
     margin: 0 auto 7px auto;
 
     -webkit-transition-property: transform, border, background;
@@ -905,7 +925,7 @@ p.green {
 }
 
 .respmenubtn:hover span {
-    background: #FFED00;
+    background: #6bbdd2;
 }
 
 .respmenubtn.active span {
@@ -913,7 +933,7 @@ p.green {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #FFED00;
+    background: #6bbdd2;
 }
 
 .respmenubtn.active span:last-child {
@@ -945,7 +965,7 @@ p.green {
     vertical-align: top;
     width: 69%;
     padding: 5px 2% 0 2%;
-    text-align: left;
+    /*text-align: left;*/
 }
 
 .header-site.row-1 .col-2 .inner-col-2 {
@@ -953,11 +973,15 @@ p.green {
     vertical-align: top;
     width: 31%;
     padding: 0 0 0 2%;
-    text-align: left;
+    /*text-align: left;*/
 }
 
 .search-box {
-    display: block;
+    /*display: block;*/
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 378px;
     position: relative;
     overflow: hidden;
     border: 1px solid #e1e1e1;
@@ -1034,8 +1058,12 @@ p.green {
 }
 
 .basket-link {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 190px;
     text-align: center;
-    padding: 8px 0 9px 0;
+    padding: 8px 3px 9px 3px;
     cursor: pointer;
     background: #ededed;
     -webkit-border-radius: 0 0 9px 9px;
@@ -1062,18 +1090,18 @@ p.green {
 
 .header-site.row-2 .col-1 {
     width: 29%;
-    padding: 10px 0;
+    padding: 10px 1% 10px 0;
 }
 
 .header-site.row-2 .col-2 {
     width: 45%;
-    padding: 40px 0 10px 0;
+    padding: 40px 1% 10px 1%;
     text-align: center;
 }
 
 .header-site.row-2 .col-3 {
     width: 26%;
-    padding: 10px 0;
+    padding: 10px 0 10px 1%;
     text-align: right;
 }
 
@@ -1191,6 +1219,7 @@ p.green {
 
 .promo-section {
     padding: 0;
+    /*overflow: hidden;*/
 }
 
 .promo-slider_wrapp {
@@ -1250,8 +1279,6 @@ p.green {
 }
 
 .article_1 h2 span {
-    display: inline-block;
-    vertical-align: baseline;
     font-size: 30px;
     line-height: 36px;
 }
@@ -1287,6 +1314,8 @@ p.green {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 25px;
+    font-style: normal;
+    color: #6aa392;
 }
 
 .btns_wrapp {
@@ -1321,6 +1350,7 @@ p.green {
     width: 100%;
     position: absolute;
     bottom: 75px;
+    left: 0;
 }
 
 /*-- /Section - Home --*/
@@ -1506,8 +1536,15 @@ p.green {
     opacity: .01;
 }
 
+.products-slider .slide {
+    text-align: center;
+}
+
 .thumb_2 {
-    width: 316px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 316px;
     padding: 15px;
 }
 
@@ -2011,13 +2048,13 @@ p.green {
     width: 100%;
 }
 
-.testimonial_wrapp .col-1 {
+.testimonial_wrapp > .col-1 {
     display: table-cell;
     vertical-align: top;
     width: 298px;
 }
 
-.testimonial_wrapp .col-2 {
+.testimonial_wrapp > .col-2 {
     display: table-cell;
     vertical-align: top;
     width: auto;
@@ -2117,13 +2154,13 @@ p.green {
 .testimonial-header .col-1 {
     display: inline-block;
     vertical-align: middle;
-    width: 60%;
+    width: 40%;
 }
 
 .testimonial-header .col-2 {
     display: inline-block;
     vertical-align: middle;
-    width: 40%;
+    width: 60%;
     text-align: right;
 }
 
@@ -2363,6 +2400,7 @@ section.dark h2 {
 .contacts-box {
     display: inline-block;
     vertical-align: middle;
+    width: 100%;
     max-width: 480px;
     padding: 0 3%;
     text-align: left;
@@ -2616,11 +2654,11 @@ section.dark h2 {
     color: #bddde6;
 }
 
-.tabs-links label:before {
+.tabs-2 .tabs-links label:before {
     display: none;
 }
 
-.tabs-links label:after {
+.tabs-2 .tabs-links label:after {
     display: none;
 }
 
