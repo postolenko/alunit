@@ -234,12 +234,10 @@
 	}
 
 	.header-site.row-1 .col-1 {
-	    /*width: 23%;*/
 	    width: 110px;
 	}
 
 	.header-site.row-1 .col-2 {
-	    /*width: 77%;*/
 	    width: calc(100% - 110px);
 	}
 
@@ -988,10 +986,6 @@
 
 	/*-- /Footer --*/
 	
-}
-
-@media only screen and (max-width: 350px) {
-
 }
 
 @media only screen and (min-width: 1025px) {

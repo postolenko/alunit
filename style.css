@@ -721,10 +721,6 @@ p.green {
     padding: 0 0 20px 0;
 }
 
-.breadcrumbs-list {
-
-}
-
 .breadcrumbs-list li {
     display: inline-block;
     vertical-align: top;
@@ -775,10 +771,6 @@ p.green {
 /*-------------------------------------------*/
 
 /*-- Header --*/
-
-.header-site {
-    /*background: #ffffff;*/
-}
 
 .header-site.row-1 {
     background: #ffffff;
@@ -965,7 +957,6 @@ p.green {
     vertical-align: top;
     width: 69%;
     padding: 5px 2% 0 2%;
-    /*text-align: left;*/
 }
 
 .header-site.row-1 .col-2 .inner-col-2 {
@@ -973,11 +964,9 @@ p.green {
     vertical-align: top;
     width: 31%;
     padding: 0 0 0 2%;
-    /*text-align: left;*/
 }
 
 .search-box {
-    /*display: block;*/
     display: inline-block;
     vertical-align: top;
     width: 100%;
@@ -993,6 +982,7 @@ p.green {
 
 .search-box input {
     width: 100%;
+    height: 30px;
     padding: 0 10px;
     border: 1px solid transparent;
     background: #ffffff;
@@ -1219,21 +1209,12 @@ p.green {
 
 .promo-section {
     padding: 0;
-    /*overflow: hidden;*/
-}
-
-.promo-slider_wrapp {
-
 }
 
 .promo-slider {
     background-image: url(img/promo_slider_bg.jpg);
     background-position: center;
     background-size: cover;
-}
-
-.promo-slider .slide {
-
 }
 
 .article_1 {
@@ -1256,16 +1237,11 @@ p.green {
 }
 
 .article_1 .col-1 img {
-    /*display: block;*/
     display: inline-block;
     vertical-align: top;
     width: auto;
     height: auto;
     max-width: 100%;
-}
-
-.article_1 {
-
 }
 
 .article_1 h2 {
@@ -1296,10 +1272,6 @@ p.green {
     background: #ffffff;
     position: relative;
     bottom: -33px;
-}
-
-.article_1-desc {
-
 }
 
 .article_1-desc p {
@@ -1359,10 +1331,6 @@ p.green {
 
 /*-- Tabs --*/
 
-.tabs-block {
-    /*margin: 31px 0 0 0;*/
-}
-
 .tabs {
     margin: 27px 0 0 0;
 }
@@ -1381,7 +1349,6 @@ p.green {
 }
 
 .tabs-links label {
-    /*max-width: 190px;*/
     -webkit-flex-grow: 1;
     flex-grow: 1;
     margin: 0 2%;
@@ -1513,7 +1480,6 @@ p.green {
 }
 
 .tabs-content .tab {
-    /*display: block;*/
     width: 100%;
     z-index: -1;
     height: 550px;
@@ -1554,8 +1520,6 @@ p.green {
 .thumb_2 .inner {
     display: block;
     overflow: hidden;
-    /*height: px;*/
-    /*outline: 1px solid red;*/
     padding: 0 18px 26px 18px;
     position: relative;
     text-align: center;
@@ -1574,7 +1538,6 @@ p.green {
 }
 
 .descript-default {
-    /*height: 424px;*/
     padding-top: 44px;
 }
 
@@ -1667,10 +1630,6 @@ p.green {
 
 .descript-hover_inner {
     padding: 20px 22px 0 22px;
-}
-
-.descript-hover ul {
-
 }
 
 .descript-hover ul li {
@@ -2175,18 +2134,10 @@ p.green {
     color: #333333;
 }
 
-.star-rating {
-
-}
-
 .star-rating li {
     display: inline-block;
     vertical-align: top;
     margin: 3px;
-}
-
-.star-rating li i {
-
 }
 
 .star {
@@ -2207,10 +2158,6 @@ p.green {
     font-size: 18px;
     line-height: 23px;
     color: #999999;
-}
-
-.testimonial p {
-
 }
 
 /*-- /Section 6 - Home Page --*/
@@ -2371,10 +2318,6 @@ section.dark h2 {
     padding: 0;
 }
 
-.map-box {
-
-}
-
 .contacrts_wrapp {
     width: 100%;
     position: absolute;
@@ -2504,10 +2447,6 @@ section.dark h2 {
     box-shadow: 0 1px 4px 0 rgba(45, 46, 46, .1);
 }
 
-.links-list {
-
-}
-
 .links-list li {
     padding: 6px 18px 5px 9%;
 }
@@ -2547,10 +2486,6 @@ section.dark h2 {
     color: #7db9a3;
 }
 
-.tabs-card_templ {
-
-}
-
 .tabs-card_templ > .col-1 {
     width: 39%;
     padding: 0 1.5% 0 3%;
@@ -2581,10 +2516,6 @@ section.dark h2 {
     transform: translate(-50%, -50%);
 }
 
-.product-title {
-
-}
-
 .product-title h2 {
     padding-top: 0;
     padding-bottom: 5px;
@@ -2595,18 +2526,6 @@ section.dark h2 {
     color: #333333;
 }
 
-.product-title p {
-
-}
-
-.thumbnails-title {
-
-}
-
-.thumbnails-title h3 {
-
-}
-
 .tabs-2 {
     margin-top: 22px;
     padding-bottom: 5px;
@@ -2615,6 +2534,7 @@ section.dark h2 {
 
 .tabs-2 .tabs-content {
     height: unset;
+    height: auto;
     padding: 4px 3% 8px 3%;
     border: 1px solid #ededed;
 }
@@ -2665,6 +2585,7 @@ section.dark h2 {
 .tabs-2 .tab {
     position: relative;
     height: unset;
+    height: auto;
     display: none;
     z-index: 1;
 }
@@ -2710,14 +2631,6 @@ section.dark h2 {
 
 .price-calc_wrapp .col-3 .green-pill {
     width: 100%;
-}
-
-.price-calc_wrapp {
-
-}
-
-.price-input_wrapp {
-
 }
 
 .price-input_wrapp {

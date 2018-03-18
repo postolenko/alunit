@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$(".promo-slider").not(".slick-initialized").slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 1,
@@ -22,7 +22,7 @@ $(document).ready(function() {
     $(".products-slider").not(".slick-initialized").slick({
         dots: false,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 4,
@@ -55,7 +55,7 @@ $(document).ready(function() {
     $(".testimonial-slider").not(".slick-initialized").slick({
         dots: false,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 1,
