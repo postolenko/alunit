@@ -1544,8 +1544,11 @@ p.green {
     display: inline-block;
     vertical-align: top;
     width: 100%;
-    max-width: 316px;
     padding: 15px;
+}
+
+.products-slider .slide {
+    max-width: 316px;
 }
 
 .thumb_2 .inner {
@@ -3077,6 +3080,20 @@ p.price i {
 }
 
 /*-- /Section 1 - Shop Page --*/
+
+/*-- Section 2 - Template --*/
+
+.thumbnails_2 {
+    margin: 0 -15px;
+}
+
+.thumbnails_2 .thumb_2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+
+/*-- /Section 2 - Template --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

@@ -408,6 +408,14 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 2 - Template --*/
+
+	.thumbnails_2 .thumb_2 {
+	    width: 33.33%;
+	}
+
+	/*-- /Section 2 - Template --*/
+
 	/*-- Footer --*/
 
 	.footer_contacts_th .contact_thumb {
@@ -627,6 +635,14 @@
 
 	/*-- /Section 1 - Card Page --*/
 
+	/*-- Section 2 - Template --*/
+
+	.thumbnails_2 .thumb_2 {
+	    width: 50%;
+	}
+
+	/*-- /Section 2 - Template --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -810,6 +826,10 @@
 
 @media only screen and (max-width: 480px) {
 
+	.row {
+	    padding: 0 4%;
+	}
+
 	/*-- Header --*/
 
 	.header-site.row-1 .col-2 .inner-col-1 {
@@ -941,6 +961,32 @@
 	}
 
 	/*-- /Section 1 - Card Page --*/
+
+	/*-- Section 2 - Template --*/
+
+	.thumbnails_2 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.thumbnails_2 .thumb_2 {
+		display: block;
+	    width: 100%;
+	    max-width: 320px;
+	    margin: 0 auto;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	/*-- /Section 2 - Template --*/
+
+	/*-- Footer --*/
+
+	.h_wrapp h2 span {
+	    padding: 0;
+	}
+
+	/*-- /Footer --*/
 	
 }
 
